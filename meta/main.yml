@@ -1,9 +1,9 @@
 ---
 galaxy_info:
-  role_name: neovim
+  role_name: update
   author: Budiman JOJO
-  description: Role to install latest neovim for Linux distributions
-  issue_tracker_url: http://github.com/budimanjojo/ansible-role-neovim/issues
+  description: Role to update packages in linux
+  issue_tracker_url: http://github.com/budimanjojo/ansible-role-update/issues
   license: license (MIT)
   min_ansible_version: 2.1
   platforms:
@@ -19,6 +19,9 @@ galaxy_info:
   - name: Fedora
     versions:
     - all
+  - name: CentOS
+    versions:
+    - all
 
   galaxy_tags:
   - system
@@ -26,8 +29,10 @@ galaxy_info:
   - linux
   - server
   - development
-  - neovim
-  - nvim
-  - appimage
+  - update
+  - apt
+  - dnf
+  - yum
+  - pacman
 
 dependencies: []
