@@ -1,0 +1,6 @@
+---
+- name: Ensure pacman packages are updated
+  community.general.pacman:
+    update_cache: yes
+    upgrade: yes
+  notify: Rebooting system

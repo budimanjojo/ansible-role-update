@@ -1,0 +1,4 @@
+---
+- name: Rebooting system
+  reboot:
+  when: update_reboot_system | bool

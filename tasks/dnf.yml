@@ -1,0 +1,7 @@
+---
+- name: Ensure dnf packages are updated
+  dnf:
+    name: "*"
+    update_cache: yes
+    state: latest
+  notify: Rebooting system
