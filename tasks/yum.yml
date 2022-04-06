@@ -1,6 +1,6 @@
 ---
 - name: Ensure yum packages are updated
-  yum:
+  ansible.builtin.yum:
     name: "*"
     update_cache: yes
     state: latest

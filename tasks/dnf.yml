@@ -1,6 +1,6 @@
 ---
 - name: Ensure dnf packages are updated
-  dnf:
+  ansible.builtin.dnf:
     name: "*"
     update_cache: yes
     state: latest
